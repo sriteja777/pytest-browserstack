@@ -59,7 +59,7 @@ jobs:
         run: python -m pip install assets/browserstack_sdk-1.16.2.tar.gz
 
       - name: run tests in parallel
-        run: browserstack-sdk pytest -s tests/bstack-sample-test.py
+        run: browserstack-sdk pytest -s tests/*.py
 
       - name: run local tests in parallel
         run: browserstack-sdk pytest -s tests/bstack-local-test.py
